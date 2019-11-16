@@ -12,18 +12,56 @@
 <body>
     <div class="output">
         <ul>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
-            <li>Lorem ipsum dolor sit amet.</li>
+            <li id='style'>Lorem ipsum dolor sit amet.</li>
+            <li id='style'>Lorem ipsum dolor sit amet.</li>
+            <li id='style'>Lorem ipsum dolor sit amet.</li>
+            <li id='style'>Lorem ipsum dolor sit amet.</li>
+            <li id='style'>Lorem ipsum dolor sit amet.</li>
         </ul>
     </div>
     <div class="button">
-        <button class="edit" type="button">edit</button>
-        <button class="style" type="button">style</button>
+        <button class="edit" type="button" onclick="activeEdit()">edit</button>
+        <button class="style" type="button" onclick="activeStyle()">style</button>
     </div>
-    <div id="textEditor"  class="input"></div>
+    <div class="input">
+        <div class="editBlock">
+            <textarea class="textarea"></textarea>
+            <div class="editBtn">
+                <button class="add" type="button" onclick="add()">add</button>
+                <button class="save" type="button" onclick="save()">save</button>
+            </div>
+        </div>
+        <div class="styleBlock">
+            <p>Font Size</p>
+            <div class="radio">
+                <input type="radio" name="select">12px
+                <input type="radio" name="select">14px
+                <input type="radio" name="select">16px
+                <input type="radio" name="select">18px
+                <input type="radio" name="select">20px
+            </div>
+            <p>Font Family</p>
+            <form action="" class="choose">
+                <select class="select">
+                    <option disabled selected>Choose option</option>
+                    <option name="cursive">cursive</option>
+                    <option name="fantasy">fantasy</option>
+                    <option name="monospace">monospace</option>
+                    <option name="sans-serif">sans-serif</option>
+                </select>
+            </form>
+            <p>Colors</p>
+            <div class="buttonText">
+                <button type="button" class="textColor">Color of Text</button>
+                <button type="button" class="textBackground">Color of Background</button>
+            </div>
+            <p>Style</p>
+            <form action="" class="chackBox">
+                <input type="checkbox" class="boldText">Bold text
+                <input type="checkbox" class="cursiveText">Cursive text
+            </form>
+        </div>
+    </div>
     <script src="index.js"></script>
 </body>
 

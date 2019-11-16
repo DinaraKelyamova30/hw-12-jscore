@@ -1,7 +1,8 @@
-*{
+* {
     font-family: Arial, Helvetica, sans-serif;
 }
-.output{
+
+.output {
     height: 300px;
     width: 900px;
     margin: auto;
@@ -10,14 +11,14 @@
     background-color: #e8e8e8;
 }
 
-li{
+li {
     list-style-type: none;
     padding-top: 20px;
     font-size: 14px;
     color: #686868;
 }
 
-.input{
+.input {
     height: 300px;
     width: 900px;
     margin: auto;
@@ -26,7 +27,7 @@ li{
     background-color: #e8e8e8;
 }
 
-.button{
+.button {
     width: 200px;
     margin: auto;
     display: flex;
@@ -34,7 +35,7 @@ li{
     flex-direction: row;
 }
 
-.edit{
+.edit {
     height: 30px;
     width: 60px;
     background-color: orange;
@@ -44,7 +45,7 @@ li{
     color: #464646;
 }
 
-.style{
+.style {
     height: 30px;
     width: 60px;
     background-color: rgb(0, 140, 255);
@@ -52,4 +53,80 @@ li{
     border-radius: 5px;
     color: white;
     margin: 5px;
+}
+
+.textarea {
+    width: 800px;
+    height: 200px;
+    margin-top: 20px;
+    margin-left: 50px;
+    border-radius: 5px;
+}
+
+.add {
+    width: 60px;
+    height: 30px;
+    background-color: red;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-left: 50px;
+}
+
+.save {
+    width: 60px;
+    height: 30px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    margin-left: 5px;
+}
+
+
+.styleBlock {
+    margin-left: 35px;
+    margin-top: 20px;
+}
+
+.styleBlock p {
+    color: #464646;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.styleBlock form {
+    color: #464646;
+    font-size: 14px;
+}
+
+.radio {
+    display: flex;
+    flex-direction: row;
+    color: #464646;
+    font-size: 14px;
+}
+
+.buttonText button {
+    height: 30px;
+    background-color: gray;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.select {
+    height: 30px;
+    width: 220px;
+    border-radius: 5px;
+}
+
+.editBlock {
+    display: none;
+}
+
+.styleBlock {
+    display: none;
 }
