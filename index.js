@@ -128,6 +128,8 @@ function createTable() {
     }
     inputEdit.value += '</table>';
     windowTb.style.display = 'none';
+    document.querySelector('#table').checked = false;
+
 }
 
 // create list
@@ -145,4 +147,5 @@ function createList(){
     }
     inputEdit.value += '</ul>';
     listAdd.style.display = 'none';
+    document.querySelector('#list').checked = false;
 }
