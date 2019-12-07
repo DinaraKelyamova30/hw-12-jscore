@@ -144,4 +144,5 @@ function createList(){
         inputEdit.value += '<li>item</li>';
     }
     inputEdit.value += '</ul>';
+    listAdd.style.display = 'none';
 }

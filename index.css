@@ -197,7 +197,7 @@ li {
 }
 
 .addPlace {
-    width: 900px;
+    width: 800px;
     height: 100%;
     background-color: #e8e8e8;
     margin: auto;
@@ -214,6 +214,80 @@ li {
 
 .windowTb{
     display: none;
+}
+
+.styleAdd{
+    width: 800px;
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    padding-top: 10px;
+}
+
+.styleAdd>input{
+    width: 600px;
+    margin-left: 30px;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 3px;
+}
+
+.styleAdd>p{
+    width: 120px;
+    line-height: 5px;
+}
+
+.styleAdd>select{
+    width: 600px;
+    margin-left: 30px;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 3px;
+}
+
+.styleAddth{
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    margin: 10px 0;
+}
+
+
+.styleAddth>input{
+    width: 130px;
+    margin-left: 30px;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 3px;
+}
+
+.styleAddth>p{
+    width: 120px;
+    line-height: 5px;
+}
+
+.styleAddth>select{
+    width: 70px;
+    margin-left: 30px;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 3px;
+}
+
+.tableBtn{
+    width: 100px;
+    height: 30px;
+    margin: 10px 0;
+    border: none;
+    background-color: rgb(0, 209, 139);
+    color: white;
+    border-radius: 3px;
+}
+
+.listBtn{
+    width: 100px;
+    height: 30px;
+    margin: 10px 0;
+    border: none;
+    background-color: rgb(179, 98, 255);
+    color: white;
+    border-radius: 3px;
 }
 
 .listAdd{

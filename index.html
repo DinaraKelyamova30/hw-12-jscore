@@ -98,43 +98,58 @@
                 </div>
                 <div class="windowTb">
                     <form class="formAdd" action="">
-                        <p>Coutn TR:</p>
-                        <input type="text" placeholder="Coutn TR:" value="">
-                        <p>Count TD:</p>
-                        <input type="text" placeholder="Count TD:" value="">
+                        <div class="styleAdd">
+                            <p>Coutn TR:</p>
+                            <input type="text" placeholder="Coutn TR:" value="">
+                        </div>
+                        <div class="styleAdd">
+                            <p>Count TD:</p>
+                            <input type="text" placeholder="Count TD:" value="">
+                        </div>
                         <h2>Add style to your table</h2>
-                        <p>Width of TD:</p>
-                        <input type="text" placeholder="Width of TD:" value="">
-                        <p>Hight of TD:</p>
-                        <input type="text" placeholder="Hight of TD:" value="">
-                        <p>Width of border:</p>
-                        <input type="text" placeholder="Width of botder:" value="">
-                        <p>Type of border:</p>
-                        <select class="typeBorder">
-                            <option value="solid">solid</option>
-                            <option value="dotted">dotted</option>
-                            <option value="double">double</option>
-                        </select>
-                        <p>Color of border:</p>
-                        <select class="colorBorder">
-                            <option value="red">red</option>
-                            <option value="green">green</option>
-                            <option value="blue">blue</option>
-                        </select>
-                        <button type="button" onclick="createTable()">Create Table</button>
+                        <div class="styleAdd">
+                            <p>Width of TD:</p>
+                            <input type="text" placeholder="Width of TD:" value="">
+                        </div>
+                        <div class="styleAdd">
+                            <p>Hight of TD:</p>
+                            <input type="text" placeholder="Hight of TD:" value="">
+                        </div>
+                        <div class="styleAddth">
+                            <p>Width of border:</p>
+                            <input type="text" placeholder="Width of botder:" value="">
+                            <p>Type of border:</p>
+                            <select class="typeBorder">
+                                <option value="solid">solid</option>
+                                <option value="dotted">dotted</option>
+                                <option value="double">double</option>
+                            </select>
+                            <p>Color of border:</p>
+                            <select class="colorBorder">
+                                <option value="red">red</option>
+                                <option value="green">green</option>
+                                <option value="blue">blue</option>
+                            </select>
+                        </div>
+                        <button class="tableBtn" type="button" onclick="createTable()">Create Table</button>
                     </form>
                 </div>
                 <div class="listAdd">
                     <form action="" class="formList">
-                        <p>Count Li:</p>
-                        <input type="text" placeholder="Count Li:" ;>
-                        <p>Type of marks:</p>
-                        <select>
-                            <option value="circle">circle</option>
-                            <option value="disc">disc</option>
-                            <option value="square">square</option>
-                        </select>
-                        <button type="button" onclick="createList()">Create List</button>
+                        <div class="styleAdd">
+                            <p>Count Li:</p>
+                            <input type="text" placeholder="Count Li:" ;>
+                        </div>
+                        <div class="styleAdd">
+                            <p>Type of marks:</p>
+                            <select>
+                                <option value="circle">circle</option>
+                                <option value="disc">disc</option>
+                                <option value="square">square</option>
+                            </select>
+                        </div>
+                        <br>
+                        <button  class="listBtn" type="button" onclick="createList()">Create List</button>
                     </form>
                 </div>
             </div>
