@@ -10,57 +10,136 @@
 </head>
 
 <body>
-    <div class="output">
-        <ul>
-            <li id='style'>Lorem ipsum dolor sit amet.</li>
-            <li id='style'>Lorem ipsum dolor sit amet.</li>
-            <li id='style'>Lorem ipsum dolor sit amet.</li>
-            <li id='style'>Lorem ipsum dolor sit amet.</li>
-            <li id='style'>Lorem ipsum dolor sit amet.</li>
-        </ul>
-    </div>
-    <div class="button">
-        <button class="edit" type="button" onclick="activeEdit()">edit</button>
-        <button class="style" type="button" onclick="activeStyle()">style</button>
-    </div>
-    <div class="input">
-        <div class="editBlock">
-            <textarea class="textarea"></textarea>
-            <div class="editBtn">
-                <button class="add" type="button" onclick="add()">add</button>
-                <button class="save" type="button" onclick="save()">save</button>
-            </div>
+    <div class="h">
+        <div class="output">
+            <ul>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+                <li>Lorem ipsum dolor sit amet.</li>
+            </ul>
         </div>
-        <div class="styleBlock">
-            <p>Font Size</p>
-            <div class="radio">
-                <input type="radio" name="select">12px
-                <input type="radio" name="select">14px
-                <input type="radio" name="select">16px
-                <input type="radio" name="select">18px
-                <input type="radio" name="select">20px
+        <div class="button">
+            <button class="edit" type="button" onclick="activeEdit()">edit</button>
+            <button class="style" type="button" onclick="activeStyle()">style</button>
+        </div>
+        <div class="input">
+            <div class="editBlock">
+                <textarea class="textarea"></textarea>
+                <div class="editBtn">
+                    <button class="add" type="button" onclick="add()">add</button>
+                    <button class="save" type="button" onclick="save()">save</button>
+                </div>
             </div>
-            <p>Font Family</p>
-            <form action="" class="choose">
-                <select class="select">
+            <div class="styleBlock">
+                <p>Font Size</p>
+                <form action="" class="checked">
+                    <input id="radio1" type="radio" name="select" value="12px">
+                    <label for="radio1">12px</label>
+                    <input id="radio2" type="radio" name="select" value="14px">
+                    <label for="radio2">14px</label>
+                    <input id="radio3" type="radio" checked name="select" value="16px">
+                    <label for="radio3">16px</label>
+                    <input id="radio4" type="radio" name="select" value="18px">
+                    <label for="radio4">18px</label>
+                    <input id="radio5" type="radio" name="select" value="20px">
+                    <label for="radio5">20px</label>
+                </form>
+                <p>Font Family</p>
+                <select name="sel" id="sel">
                     <option disabled selected>Choose option</option>
-                    <option name="cursive">cursive</option>
-                    <option name="fantasy">fantasy</option>
-                    <option name="monospace">monospace</option>
-                    <option name="sans-serif">sans-serif</option>
+                    <option value="cursive">cursive</option>
+                    <option value="fantasy">fantasy</option>
+                    <option value="monospace">monospace</option>
+                    <option value="sans-serif">sans-serif</option>
                 </select>
-            </form>
-            <p>Colors</p>
-            <div class="buttonText">
-                <button type="button" class="textColor">Color of Text</button>
-                <button type="button" class="textBackground">Color of Background</button>
+                <p>Colors</p>
+                <div class="buttonText">
+                    <button type="button" class="textColor">Color of Text</button>
+                    <button type="button" class="textBackground">Color of Background</button>
+                </div>
+                <p>Style</p>
+                <form action="" class="checkBox">
+                    <input id="check" type="checkbox" class="boldText">
+                    <label for="check">Bold text</label>
+                    <input id="check1" type="checkbox" class="cursiveText">
+                    <label for="check1">Cursive text</label>
+                </form>
+                <div class="palette">
+                    <div class="s">
+                        <div class="box color1"></div>
+                        <div class="box color2"></div>
+                        <div class="box color3"></div>
+                    </div>
+                    <div class="s">
+                        <div class="box color4"></div>
+                        <div class="box color5"></div>
+                        <div class="box color6"></div>
+                    </div>
+                    <div class="s">
+                        <div class="box color7"></div>
+                        <div class="box color8"></div>
+                        <div class="box color9"></div>
+                    </div>
+                </div>
             </div>
-            <p>Style</p>
-            <form action="" class="chackBox">
-                <input type="checkbox" class="boldText">Bold text
-                <input type="checkbox" class="cursiveText">Cursive text
-            </form>
         </div>
+    </div>
+    <div class="addS">
+        <div class="addPlace">
+            <div class="addBlock">
+                <h1>Chose what you want:</h1>
+                <div class="listRadio">
+                    <input id="table" type="radio" name="type" value="table" onchange="tableOpen()">
+                    <label for="table">table</label>
+                    <input id="list" type="radio" name="type" value="list" onchange="listOpen()">
+                    <label for="table">list</label>
+                </div>
+                <div class="windowTb">
+                    <form class="formAdd" action="">
+                        <p>Coutn TR:</p>
+                        <input type="text" placeholder="Coutn TR:" value="">
+                        <p>Count TD:</p>
+                        <input type="text" placeholder="Count TD:" value="">
+                        <h2>Add style to your table</h2>
+                        <p>Width of TD:</p>
+                        <input type="text" placeholder="Width of TD:" value="">
+                        <p>Hight of TD:</p>
+                        <input type="text" placeholder="Hight of TD:" value="">
+                        <p>Width of border:</p>
+                        <input type="text" placeholder="Width of botder:" value="">
+                        <p>Type of border:</p>
+                        <select class="typeBorder">
+                            <option value="solid">solid</option>
+                            <option value="dotted">dotted</option>
+                            <option value="double">double</option>
+                        </select>
+                        <p>Color of border:</p>
+                        <select class="colorBorder">
+                            <option value="red">red</option>
+                            <option value="green">green</option>
+                            <option value="blue">blue</option>
+                        </select>
+                        <button type="button" onclick="createTable()">Create Table</button>
+                    </form>
+                </div>
+                <div class="listAdd">
+                    <form action="" class="formList">
+                        <p>Count Li:</p>
+                        <input type="text" placeholder="Count Li:" ;>
+                        <p>Type of marks:</p>
+                        <select>
+                            <option value="circle">circle</option>
+                            <option value="disc">disc</option>
+                            <option value="square">square</option>
+                        </select>
+                        <button type="button" onclick="createList()">Create List</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
     </div>
     <script src="index.js"></script>
 </body>
