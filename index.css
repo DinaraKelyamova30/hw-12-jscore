@@ -48,6 +48,9 @@ li {
     margin: 5px;
     color: #464646;
 }
+.edit:hover{
+    background-color: rgb(224, 146, 1);
+}
 
 .style {
     height: 30px;
@@ -57,6 +60,10 @@ li {
     border-radius: 5px;
     color: white;
     margin: 5px;
+}
+
+.style:hover{
+    background-color: rgb(0, 122, 221);
 }
 
 .textarea {
@@ -77,6 +84,10 @@ li {
     margin-left: 50px;
 }
 
+.add:hover{
+    background-color: rgb(216, 1, 1);
+}
+
 .save {
     width: 60px;
     height: 30px;
@@ -87,6 +98,9 @@ li {
     margin-left: 5px;
 }
 
+.save:hover{
+    background-color: rgb(0, 99, 0);
+}
 
 .styleBlock {
     margin-left: 35px;
@@ -241,6 +255,7 @@ li {
     margin-left: 30px;
     border: 1px solid rgb(194, 194, 194);
     border-radius: 3px;
+    color: rgb(65, 65, 65);
 }
 
 .styleAddth{
@@ -258,9 +273,15 @@ li {
     border-radius: 3px;
 }
 
-.styleAddth>p{
+.parLg{
     width: 120px;
     line-height: 5px;
+}
+
+.parSm{
+    width: 115px;
+    line-height: 5px;
+    margin-left: 20px;
 }
 
 .styleAddth>select{
@@ -268,6 +289,7 @@ li {
     margin-left: 30px;
     border: 1px solid rgb(194, 194, 194);
     border-radius: 3px;
+    color: rgb(65, 65, 65);
 }
 
 .tableBtn{
@@ -279,7 +301,9 @@ li {
     color: white;
     border-radius: 3px;
 }
-
+.tableBtn:hover{
+    background-color: rgb(0, 185, 124);
+}
 .listBtn{
     width: 100px;
     height: 30px;
@@ -290,6 +314,9 @@ li {
     border-radius: 3px;
 }
 
+.listBtn:hover{
+    background-color: rgb(172, 82, 255);
+}
 .listAdd{
     display: none;
 }
